@@ -1,0 +1,62 @@
+.item{
+    position: relative;
+    
+}
+.img-fluid{
+    cursor: pointer;
+}
+.item-caption{
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    left: 10%;
+    bottom: 20px;
+    padding: 5px;
+}
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#lightbox-item{
+    width: 60%;
+    height: 500px;
+    background-image: url("../images/portfolio-1.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     position: relative; 
+
+}
+#close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+#prev{
+    cursor: pointer;
+}
+#next{
+    cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width:992px) {
+    .item-caption{
+        position: absolute;
+        background-color: #fff !important;
+        width: 80%;
+        left: 10%;
+        bottom: 20px;
+        top: 75px;
+        padding: 5px;
+        overflow: hidden;
+    }
+ }
